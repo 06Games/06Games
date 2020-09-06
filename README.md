@@ -28,5 +28,5 @@ I did a few projects, mostly in C#.
 <br /><br />
 
 <p align=center>
-  <img alt="Github stats" src="https://github-readme-stats.vercel.app/api?username=06Games&show_icons=true&theme=darcula" />
+  <img alt="Github stats" src="https://github-readme-stats.vercel.app/api?username=06Games&show_icons=true" />
  </p>
