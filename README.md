@@ -1,6 +1,11 @@
-Hi, 👋  
+## Hi 👋  
 I'm **Evan** creator of [06Games](https://github.com/06-Games).  
 I did a few projects, mostly in C#.
+<p align=center>
+  <a href="https://discord.gg/PaFbgFT"><img src="https://discord.com/assets/1c8a54f25d101bdc607cec7228247a9a.svg" width="50" /></a>
+  <a href="https://paypal.me/06games"><img src="https://raw.githubusercontent.com/06Games/06Games/master/images/paypal.jpg" width="50" /></a>
+  <a href="https://www.reddit.com/user/06GamesG"><img src="https://www.redditinc.com/assets/images/site/reddit-logo.png" width="50" /></a>
+</p>
 
 ## My projects
 ### Games
@@ -19,3 +24,9 @@ I did a few projects, mostly in C#.
 
 ## My collaborations
 * <img src="https://raw.githubusercontent.com/MazeWave/Vanilla-Raytraced/master/Vanilla%20Raytraced/pack_icon.png" width="15"> **[Vanilla Raytraced](https://github.com/MazeWave/Vanilla-Raytraced) ([MazeWave](https://github.com/MazeWave)):** A great, free and open-source RTX resource pack for the Minecraft Bedrock Edition.
+
+<br /><br />
+
+<p align=center>
+  <img alt="Github stats" src="https://github-readme-stats.vercel.app/api?username=06Games&show_icons=true&theme=darcula" />
+ </p>
