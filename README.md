@@ -2,7 +2,7 @@
 I'm **Evan** creator of [06Games](https://github.com/06-Games).  
 I did a few projects, mostly in C#.
 <p align=center>
-  <a href="https://discord.gg/PaFbgFT"><img src="https://discord.com/assets/f8389ca1a741a115313bede9ac02e2c0.svg" width="50" /></a>
+  <a href="https://discord.gg/PaFbgFT"><img src="https://raw.githubusercontent.com/06Games/06Games/master/images/discord.png" width="50" /></a>
   <a href="https://paypal.me/06games"><img src="https://raw.githubusercontent.com/06Games/06Games/master/images/paypal.png" width="50" /></a>
   <a href="https://www.reddit.com/user/06GamesG"><img src="https://www.redditinc.com/assets/images/site/reddit-logo.png" width="50" /></a>
 </p>
