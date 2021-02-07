@@ -20,7 +20,7 @@ I did a few projects, mostly in C#.
 ### Websites
 * <img src="https://06games.github.io/images/websites/06games.png" width="15"> **[06Games](https://github.com/06-Games/website):** A website for 06Games (nothing more to add 😄)  
 * <img src="https://raw.githubusercontent.com/06Games/06Games/master/images/06games-alt.png" width="15"> **[My presentation site](https://github.com/06Games/06games.github.io):** A site that I created to present myself and highlight my projects (a bit like what you are reading now...)  
-* <img src="https://mazewave.github.io/assets/img/home/profile.jpg" width="15"> **[MazeWave's website](https://mazewave.github.io/):** A site to present MazeWave and his projects
+* <img src="https://mazewave.github.io/assets/img/home/profile.jpg" width="15"> **[MazeWave's website](https://github.com/MazeWave/mazewave.github.io/):** A site to present MazeWave and his projects
 * <img src="https://06games.github.io/images/websites/espaceProG.png" width="15"> **Espace Pro G:** *Top secret* (Or maybe not that much)
 
 ## My collaborations
