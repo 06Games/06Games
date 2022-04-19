@@ -23,9 +23,8 @@ jobs:
 
           # Options
           user: 06Games
-          template: markdown
           base: activity, community, repositories
-          config_output: gist
+          output_action: gist
           committer_gist: 10f4965fcf0f4b50323eea8346f5a32d
           config_timezone: Europe/Paris
           config_display: columns
