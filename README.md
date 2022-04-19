@@ -28,7 +28,4 @@ I did a few projects, mostly in C#.
 
 <br /><br />
 
-<p align=center>
-  <img alt="Github stats" src="https://github-readme-stats.vercel.app/api?username=06Games&show_icons=true&count_private=true" />
-  <br /><img alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=06Games&card_width=495" />
- </p>
+<img src="https://gist.github.com/06Games/10f4965fcf0f4b50323eea8346f5a32d/raw/github-metrics.svg" alt="Metrics" width="100%">
