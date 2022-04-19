@@ -28,4 +28,6 @@ I did a few projects, mostly in C#.
 
 <br /><br />
 
-<img src="https://gist.github.com/06Games/10f4965fcf0f4b50323eea8346f5a32d/raw/github-metrics.svg" alt="Metrics" width="100%">
+<p align="center">
+	<img src="https://gist.github.com/06Games/10f4965fcf0f4b50323eea8346f5a32d/raw/github-metrics.svg" alt="Metrics" width="400">
+</p>
