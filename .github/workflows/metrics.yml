@@ -21,7 +21,7 @@ jobs:
           committer_gist: 10f4965fcf0f4b50323eea8346f5a32d
           config_timezone: Europe/Paris
           repositories_affiliations: owner,collaborator
-          repositories_forks: yes
+          #repositories_forks: yes
           plugin_achievements: yes
           plugin_achievements_display: compact
           plugin_achievements_secrets: yes
