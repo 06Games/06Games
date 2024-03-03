@@ -1,0 +1,212 @@
+% we use the 'tcolorbox' package to create most of the formatting
+\usepackage[most]{tcolorbox}
+
+% we use 'geometry' package so that we can set the margins to be exactly we eant. In this case, 2.54 cm all around, to match those that MS word uses by default. Note that we set different margins at the top and bottom to take account of the custom header and footer that we are using. 
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    left=0.1cm,
+    right=0.6cm,
+    top=0.1cm,
+    bottom=0.1cm
+}
+
+% Fonts
+\usepackage[TU]{fontenc}
+\usepackage{fourier-otf}
+
+% to have awesome icon 
+%\usepackage{fontawesome} 
+\usepackage{fontawesome5} 
+\usepackage{academicons}
+
+% advanced drawing
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{smartdiagram}
+\usepackage{float}
+\usepackage{array}
+\usetikzlibrary{decorations.text}
+\usetikzlibrary{fadings}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes.misc,positioning}
+\usetikzlibrary{arrows}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{backgrounds} 
+\usetikzlibrary{shadings}
+\usetikzlibrary{calendar} 
+\usetikzlibrary{er}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shapes} 
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{decorations}
+\usetikzlibrary{topaths}
+\usepackage{graphicx}
+
+% set TikZ styles
+\tikzset{
+  contactIcon/.style={%
+    minimum height=\baselineskip,
+  }
+}
+
+% pictures
+\usepackage{graphicx}
+% loads graphicx, provides align=c option for vertical alignment w.r.t. text
+\RequirePackage{graphbox}
+
+% more advanced expressions in \setlength
+\usepackage{calc}
+
+% links
+\usepackage{hyperref}
+
+% Define Colors
+\RequirePackage{xcolor}
+\definecolor{titleBackColor}{rgb}{0.25,0.25,0.25}
+\definecolor{sideBarColor}{rgb}{0.6,0.6,0.6}
+
+% Define Lengths
+\newlength\cvPictureWidth
+\setlength\cvPictureWidth{4cm}
+
+% avoid line overflow
+% \setlength{\emergencystretch}{2pt}
+
+% CV tag for skills
+\newcommand{\cvtag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=black!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{\footnotesize #1};
+}
+
+% top box with simple header
+\newcommand{\simpleheader}[5]{
+\tikz[remember picture,overlay] {%
+\node[rectangle, fill=#1, anchor=north, minimum width=\paperwidth, minimum height=3.5cm](header) at (current page.north){};%
+\node[draw=none, align=left](name) at (header) {%
+{\Huge \color{#5} #2 #3 }%
+};%
+\node[draw=none, below](description) at (name.south) {\color{white}#4};% 
+}\vspace{-0.7cm}%
+}
+
+% Command Example:
+% \simpleheader{titleBackColor}{Name}{Surname}{Job}{textColor}
+
+% Next page header
+\newcommand{\newpageheader}[5]{
+\tikz[remember picture,overlay] {%
+\node[rectangle, fill=#1, anchor=north, minimum width=\paperwidth, minimum height=1.4cm](header) at (current page.north){};%
+}\vspace{0cm}%
+\begin{tcolorbox}[colback=titleBackColor,boxrule=0pt,frame empty]
+\large \textcolor{#5}{#2 \textbf{#3}}
+ \hspace*{0.2\textwidth}{\large \textcolor{#5}{#4}}
+\hspace*{\fill}{\large \textcolor{#5}{Curriculum Vitae}}
+\end{tcolorbox}
+}
+
+% SideBar
+\newcommand{\sidebar}[1]{
+\tikz[remember picture,overlay] {%
+\node[rectangle, fill=#1, anchor=north west, minimum width=8.6cm, minimum height=\paperheight](header) at (current page.north west){};%
+}\vspace{-0.7cm}%
+}
+
+% Flag for Languages section and for all small personal icons
+\newcommand{\flag}[1]{\includegraphics[align=c, width=1em]{#1}}
+
+% Command for Education and Works
+\newcommand{\MySection}[7]{ % input: years, logo, title, university, city, specialization, description
+    \adjustbox{valign=t}{\begin{minipage}{2cm}
+        \begin{center}
+            {\small \bfseries #1} \\
+            \vspace*{0.1cm}
+            \includegraphics[width=1.2cm]{#2}
+        \end{center}
+    \end{minipage}}
+    \hfill \vline \hfill
+    \adjustbox{valign=t}{\begin{minipage}{8.5cm}
+        {\normalsize\bfseries #3}
+        \newline
+        \hfill {\footnotesize \faMapMarker  ~ #5}
+        \newline
+        {\small\bfseries #4}
+        \newline 
+        \small {\emph{#6}}
+        \newline 
+        \footnotesize {#7} 
+    \end{minipage}}
+}
+
+\newcommand{\MySectionNoPic}[5]{ % input: years, logo, title, university, city, specialization, description
+    \adjustbox{valign=t}{\begin{minipage}{2cm}
+    \begin{center}
+        {\small \bfseries #1} \\
+        \vspace*{0.1cm}
+    \end{center}
+    \end{minipage}}
+    \hfill \vline \hfill
+    \adjustbox{valign=t}{\begin{minipage}{8.5cm}
+        {\normalsize \bfseries #2}
+        \newline
+        \hfill {\footnotesize\faMapMarker  ~ #3}
+        \newline
+        %{\small \bfseries #3} \\
+        \small {\emph{#4}} \\
+        \footnotesize {#5} 
+    \end{minipage}}
+}
+
+% Publication Section
+\newcommand{\publication}[6]{ % Article/Conference, year, name, authors, journal, DOI
+    \adjustbox{valign=t}{\begin{minipage}{2.5cm}
+    {\small \textbf{#1} \\ \footnotesize #2} \\
+    \end{minipage}}
+    \hfill
+    \adjustbox{valign=t}{\begin{minipage}{8cm}
+        {\footnotesize \textbf{#3}, #4, \textit{#5}, \aiDoi \hspace{0.1mm} \href{https://www.doi.org/#6}{#6}}
+    \end{minipage}}
+}
+
+% ITC section
+\newcommand{\ITCcompetence}[2]{ % input: Branch, description
+    \adjustbox{valign=t}{\begin{minipage}{2cm}
+    \begin{center}
+        {\footnotesize \bfseries #1} \\
+        \vspace*{0.1cm}
+    \end{center}
+    \end{minipage}}
+    \hfill \vline \hfill
+    \adjustbox{valign=t}{\begin{minipage}{8.5cm}
+        {\footnotesize #2}
+    \end{minipage}}
+}
+
+\usepackage{lipsum} % dummy text
+\usepackage{adjustbox} % to a better alignement of text
+
+% Format of the title section in the side column
+% based on https://tex.stackexchange.com/questions/65731
+\makeatletter
+\def\cv@hrulefill{{\color{titleBackColor}\leavevmode\leaders\hrule height 1pt\hfill\kern\z@}}
+% line before and after text (some tweaking is required here)
+% based on https://tex.stackexchange.com/questions/15119
+\NewDocumentCommand{\ruleline}{m}{\par\noindent\raisebox{\baselineskip/4}{\makebox[\linewidth]{\cv@hrulefill\hspace{1ex}\raisebox{-\baselineskip/4}{\large #1}\hspace{1ex}\cv@hrulefill}}\vspace*{0.05cm}}
+\makeatother
+
+\usepackage{titlesec} % Allows creating custom \sections
+
+% Format of the section titles
+\titleformat{\section}{
+\bf \Large\raggedright}{}{0em}{}[\titlerule] % smallcaps, Large, continuous line - looks better if two columns, might look a bit too dramatic if just one ;) 
+\titlespacing{\section}{0pt}{12pt}{5pt} % Spacing around titles {<left spacing>}{<before spacing>}{<after spacing>}
+
+% Multiple Column Package
+\usepackage{multicol}
+
+% Generate QR Code from a link
+\usepackage{qrcode}
+
+% Info
+\title{CV}
+\date{\today}
+\author{Evan Galli}
