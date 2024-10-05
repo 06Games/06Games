@@ -1,11 +1,6 @@
 <h2 align="center">Hi 👋</h2>  
 <p align="center">I'm <b>Evan</b>
 <br />I did a few projects, mostly in C#</p>
-<p align="center">
-  <a href="https://discord.gg/PaFbgFT"><img src="https://raw.githubusercontent.com/06Games/06Games/master/images/discord.png" width="50" /></a>
-  <a href="https://paypal.me/06games"><img src="https://raw.githubusercontent.com/06Games/06Games/master/images/paypal.png" width="50" /></a>
-  <a href="https://www.reddit.com/user/06GamesG"><img src="https://www.redditinc.com/assets/images/site/reddit-logo.png" width="50" /></a>
-</p>
 
 ## My projects
 
