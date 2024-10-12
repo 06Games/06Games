@@ -4,4 +4,5 @@
 *.log
 *.out
 *.synctex*
+*.xdv
 Thumbs.db

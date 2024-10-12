@@ -42,6 +42,16 @@
 \usetikzlibrary{decorations}
 \usetikzlibrary{topaths}
 \usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{datenumber, fp}
+
+\newcounter{birthday}
+\setmydatenumber{birthday}{2003}{05}{17} % my birthday
+\setdatetoday
+\addtocounter{datenumber}{-\thebirthday} % today - birthday
+\setdatebynumber{\thedatenumber} % get date
+\FPsub\result{\thedateyear}{\thestartyear} % date year - start year (see datenumber lib doc)
+\FPtrunc\myage{\result}{0} %truncate result
 
 % set TikZ styles
 \tikzset{
@@ -125,13 +135,16 @@
     \end{minipage}}
     \hfill \vline \hfill
     \adjustbox{valign=t}{\begin{minipage}{8.5cm}
-        {\normalsize\bfseries #3}
+        {\small\bfseries #3}
         \newline
         \hfill {\footnotesize \faMapMarker  ~ #5}
         \newline
         {\small\bfseries #4}
+		  \def\param{#6}
+			\ifx\param\empty
         \newline 
         \small {\emph{#6}}
+		  \fi
         \newline 
         \footnotesize {#7} 
     \end{minipage}}
@@ -140,13 +153,13 @@
 \newcommand{\MySectionNoPic}[5]{ % input: years, logo, title, university, city, specialization, description
     \adjustbox{valign=t}{\begin{minipage}{2cm}
     \begin{center}
-        {\small \bfseries #1} \\
+        {\footnotesize \bfseries #1} \\
         \vspace*{0.1cm}
     \end{center}
     \end{minipage}}
     \hfill \vline \hfill
     \adjustbox{valign=t}{\begin{minipage}{8.5cm}
-        {\normalsize \bfseries #2}
+        {\small \bfseries #2}
         \newline
         \hfill {\footnotesize\faMapMarker  ~ #3}
         \newline

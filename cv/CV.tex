@@ -1,14 +1,14 @@
 % Preamble
 % Compile with XeLateX
 
-\documentclass[11 pt,oneside,a4paper,titlepage]{article}
+\documentclass[11pt,oneside,a4paper,titlepage]{article}
 \usepackage{preamble}
 \graphicspath{{img/}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
 \sidebar{sideBarColor!25}
-\simpleheader{titleBackColor}{Evan}{Galli}{Recherche d'un stage de 4 mois à l'étranger pour l'été 2025}{white}
+\simpleheader{titleBackColor}{Evan}{Galli}{Recherche d'un stage de 4 mois à l'étranger de mai à août 2025}{white}
 
 % Start Minipages
 \vspace*{3.49cm}% start 8 cm from the top of the page}
@@ -33,7 +33,7 @@
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		% Profile section
 		\ruleline{\textbf{À propos}}
-		Etudiant ingénieur en sciences informatiques passionné par ce domaine depuis tout petit
+		Étudiant ingénieur en sciences informatiques passionné par ce domaine depuis tout petit
 
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		% Contact Section
@@ -44,7 +44,7 @@
 				column 2/.style={anchor=west,align=left,contactIcon},
 				column sep=5pt,
 				row sep=5pt] (contact) {
-				\node{\faMale};      & \node{20 ans};                                       \\
+				\node{\faMale};      & \node{\myage\ ans};                                       \\
 				\node{\faEnvelope};  & \node{\href{mailto:evan\_g@orange.fr}{evan\_g@orange.fr}};                        \\
 				\node{\faPhone};     & \node{\href{tel:+33687390787}{+33 6 87 39 07 87}};                        \\
 				\node{\faMapMarker}; & \node{163 Route d'Auribeau \\ 06130 Grasse, France}; \\
@@ -65,7 +65,7 @@
 				\node{\flag{France.png}};
 				 & \node{Français - Langue maternelle (C2)};         \\
 				\node{\flag{England.png}};
-				 & \node{Anglais - Compétence professionnelle (B2)}; \\
+				 & \node{Anglais - Compétence professionnelle (C1)}; \\
 				\node{\flag{Germany.png}};
 				 & \node{Allemand - Notions (A1)};                   \\
 			};
@@ -89,7 +89,7 @@
 		\ruleline{\textbf{Langages}}
 		\vspace*{-0.5cm}
 		\begin{center}
-			\cvtag{C\#}\cvtag{C}\cvtag{ASM}\cvtag{Java}\cvtag{HTML}\cvtag{CSS}\cvtag{JavaScript}\cvtag{PHP}\cvtag{Python}\cvtag{Go}\cvtag{SQL}
+			\cvtag{C\#}\cvtag{C++}\cvtag{C}\cvtag{Rust}\cvtag{ASM ARMv7}\cvtag{ASM 6502}\cvtag{Java}\cvtag{HTML}\cvtag{CSS}\cvtag{JS}\cvtag{TS}\cvtag{PHP}\cvtag{Python}\cvtag{Go}\cvtag{SQL}
 		\end{center}
 
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -97,7 +97,7 @@
 			\ruleline{\textbf{Points forts}}
 			\vspace*{-0.5cm}
 			\begin{center}
-				\cvtag{Créativité}\cvtag{Flexibilité}\cvtag{Autonomie}\cvtag{Patience}\cvtag{Souci du détail}\cvtag{Travail d'équipe}\cvtag{Diplomacie}\cvtag{Curieux}
+				\cvtag{Créativité}\cvtag{Flexibilité}\cvtag{Autonomie}\cvtag{Patience}\cvtag{Souci du détail}\cvtag{Travail d'équipe}\cvtag{Curieux}
 			\end{center}
 
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -120,15 +120,15 @@
 		\vspace*{1cm}
 		\section*{{\faGraduationCap} FORMATIONS}
 
-		\MySection{2023 - \\Aujourd'hui}{Polytech.png}{Ingénieur en Sciences Informatiques}{Polytech Nice-Sophia}{Campus SophiaTech, Biot, Alpes-Maritimes}{\null}{\null}
+		\MySection{2023 - \\Aujourd'hui}{Polytech.png}{Ingénieur en Sciences Informatiques}{Polytech Nice-Sophia}{Campus SophiaTech, Biot, Alpes-Maritimes}{\null}{\textbf{Premier de promotion aux semestres 5 et 6}}
 
 		\vspace*{0.22cm}
 
-		\MySection{2021 - 2023}{Polytech.png}{Cycle préparatoire intégré (PeiP)}{Polytech Nice-Sophia}{Site des Lucioles, Biot, Alpes-Maritimes}{PeiP A}{\textbf{Classé 214e sur 1742 (réseau Polytech)}}
+		\MySection{2021 - 2023}{Polytech.png}{Cycle préparatoire intégré (PeiP)}{Polytech Nice-Sophia}{Site des Lucioles, Biot, Alpes-Maritimes}{\null}{\textbf{Classé 214e sur 1742 (réseau Polytech)}}
 
 		\vspace*{0.22cm}
 
-		\MySection{2018 - 2021}{Fenelon.png}{Baccalauréat général}{Institut Fénelon}{Lycée Fenelon, Grasse, Alpes-Maritimes}{Spécialités Mathématiques et Physique-Chimie}{\textbf{Mention très bien}}
+		\MySection{2018 - 2021}{Fenelon.png}{Baccalauréat général}{Institut Fénelon}{Lycée Fenelon, Grasse, Alpes-Maritimes}{Spécialités Mathématiques et Physique-Chimie}{\textbf{Mention très bien (16,87 / 20)}}
 
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		% Certificates
@@ -152,28 +152,56 @@
 		% Projects
 		\section*{{\faDesktop} PROJETS}
 
-		\ITCcompetence{déc. 2023\\-\\fév. 2024}{
-			\textbf{P-ARM}\\
-			Création d'un processeur ARMv7-M simplifié sur Logisim-Evolution. \\
-			Au cours de ce projet, j'ai eu l'occasion de découvrir le langage assembleur et le fonctionnement d'un processeur. \\
+		\ITCcompetence{mai 2024\\-\\juin 2024}{
+			\textbf{Compilateur}
+			\cvtag{Automates}\cvtag{Assembleur}\cvtag{Sly}\cvtag{\faPython\ Python}
+			\begin{spacing}{1.0}
+			Création d'un compilateur traduisant un langage inventé pour l'occasion en code assembleur ARMv7.
+			\end{spacing}
+			\faGithub \space \href{https://github.com/Other-Project/SI3-Compiler}{Other-Project/SI3-Compiler}
+		}
+
+		\vspace*{0.22cm}
+
+		\ITCcompetence{fév. 2024\\-\\juin 2024}{
+			\textbf{QuizFlash}
+			\cvtag{\faAngular\ Angular}\cvtag{\faNodeJs\ Node.js}\cvtag{\faSass\ SCSS}\cvtag{TypeScript}
+			\begin{spacing}{1.0}
+			Plateforme web de quiz conçu pour être utilisée par des personnes atteintes d’Alzheimer. Différentes adaptations sont proposées en fonction des troubles de la personnes.
+			\end{spacing}
+			\faGithub \space \href{https://github.com/Other-Project/SI3-QuizFlash}{Other-Project/SI3-QuizFlash}
+		}
+
+		\vspace*{0.22cm}
+
+		\ITCcompetence{déc 2023\\-\\fév. 2024}{
+			\textbf{P-ARM}
+			\cvtag{Langage assembleur}\cvtag{ARMv7-M}\cvtag{C\#}
+			\begin{spacing}{1.0}
+			Reproduction d'un processeur ARMv7-M simplifié sur Logisim-Evolution et programmation d'un logiciel d'assemblage en C\#.
+			\end{spacing}
 			\faGithub \space \href{https://github.com/Other-Project/SI3-PARM}{Other-Project/SI3-PARM}
 		}
 
 		\vspace*{0.22cm}
 
-		\ITCcompetence{déc. 2022\\-\\mars 2023}{
-			\textbf{Distribuino} \\
-			Conception et fabrication d'un distributeur automatique en binôme. \\
-			Ce projet m'a permis de découvrir Arduino, les bases du C++ et l'utilisation de découpeuses laser et d'imprimantes 3D. \\
-			\faGithub \space \href{https://github.com/Other-Project/PeiP2-Distribuino}{Other-Project/PeiP2-Distribuino}
+		\ITCcompetence{avril 2020\\-\\Aujourd'hui}{
+			\textbf{GeneaGrab}
+			\cvtag{C\#}\cvtag{Avalonia}\cvtag{XAML}
+			\begin{spacing}{1.0}
+			Logiciel destiné à mes recherches généalogique, qui propose une interface ergonomique et unifiée quel que soit l'organisme d'archives détenant le registre que je souhaite visualiser.
+			\end{spacing}
+			\faGithub \space \href{https://github.com/06Games/GeneaGrab}{06Games/GeneaGrab}
 		}
 
 		\vspace*{0.22cm}
 
 		\ITCcompetence{déc. 2017\\-\\mai 2019}{
-			\textbf{Angry Dash} \\
-			Conception et réalisation d'un jeu 2D avec Unity. \\
-			Grâce à ce projet, j'ai pu approfondir mes connaissances du langage C\# et apprendre de nouveaux concepts. \\
+			\textbf{Angry Dash}
+			\cvtag{C\#}\cvtag{\faUnity\ Unity}
+			\begin{spacing}{1.0}
+			Jeu 2D conçu avec Unity où le joueur doit se déplacer dans une carte semée d'obstacles. Un éditeur de niveaux, des actions avec déclenchement et un système de personnalisation de l'interface sont disponibles.
+			\end{spacing}
 			\faGithub \space \href{https://github.com/06Games/Angry\_Dash}{06Games/Angry\_Dash}
 		}
 
