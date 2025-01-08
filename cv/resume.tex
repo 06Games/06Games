@@ -1,0 +1,239 @@
+% Preamble
+% Compile with XeLateX
+
+\documentclass[11pt,oneside,a4paper,titlepage]{article}
+\usepackage{preamble}
+\graphicspath{{img/}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\sidebar{sideBarColor!25}
+\simpleheader{titleBackColor}{Evan}{Galli}{Looking for a 4-month internship in Monaco from May to August 2025}{white}
+
+% Start Minipages
+\vspace*{3.49cm}% start 8 cm from the top of the page}
+\adjustbox{valign=t}{\begin{minipage}{7.3cm} % large 7.4 cm from the top
+		\vspace*{1.2cm} % text starts 1cm under the top of the minipage
+
+		% Picture
+		\begin{center}
+			\begin{tikzpicture}
+				\node[
+					circle,
+					minimum size=\cvPictureWidth,
+					path picture={
+							\node at (path picture bounding box.center){
+								\includegraphics[width=\cvPictureWidth]{Picture.jpg}
+							};
+						}]
+				{};
+			\end{tikzpicture}
+		\end{center}
+
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		% Profile section
+		\ruleline{\textbf{About me}}
+		Computer science engineering student with a passion for this field since childhood
+
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		% Contact Section
+		\ruleline{\textbf{Contacts}}
+		\begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
+			\matrix [
+				column 1/.style={anchor=center,contactIcon},
+				column 2/.style={anchor=west,align=left,contactIcon},
+				column sep=5pt,
+				row sep=5pt] (contact) {
+				\node{\faMale};      & \node{\myage\ years old};                                       \\
+				\node{\faEnvelope};  & \node{\href{mailto:evan\_g@orange.fr}{evan\_g@orange.fr}};                        \\
+				\node{\faPhone};     & \node{\href{tel:+33687390787}{+33 6 87 39 07 87}};                        \\
+				\node{\faMapMarker}; & \node{163 Route d'Auribeau \\ 06130 Grasse, France}; \\
+				\node{\faLinkedin};  & \node{\href{https://www.linkedin.com/in/evan-galli/}{evan-galli}};                       \\
+				\node{\faGithub};    & \node{\href{https://github.com/06Games}{06Games}};                       \\
+				\node{\faCar};       & \node{Driving license};                                     \\
+			};
+		\end{tikzpicture}
+
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\ruleline{\textbf{Languages}}
+		\begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
+			\matrix [
+				column 1/.style={anchor=center,contactIcon},
+				column 2/.style={anchor=west,align=left,contactIcon},
+				column sep=5pt,
+				row sep=5pt] (contact) {
+				\node{\flag{France.png}};
+				 & \node{French - Mother tongue (C2)};         \\
+				\node{\flag{England.png}};
+				 & \node{English - Professional competence (C1)}; \\
+				\node{\flag{Germany.png}};
+				 & \node{German - Notions (A1)};                   \\
+			};
+		\end{tikzpicture}
+
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		% Other Interests
+		\ruleline{\textbf{Interests}}
+		\small
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item  Genealogy \faUsers
+				\item  History \faBook
+				\item  Hiking \faHiking
+				\item  Swimming \faSwimmer
+			\end{itemize}
+		\end{multicols}
+
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		% Programming languages
+		\ruleline{\textbf{Programming languages}}
+		\vspace*{-0.5cm}
+		\begin{center}
+			\cvtag{C\#}\cvtag{C++}\cvtag{C}\cvtag{Rust}\cvtag{ASM ARMv7}\cvtag{ASM 6502}\cvtag{Java}\cvtag{HTML}\cvtag{CSS}\cvtag{JS}\cvtag{TS}\cvtag{PHP}\cvtag{Python}\cvtag{Go}\cvtag{SQL}
+		\end{center}
+
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		% Soft Skills and Strengths
+			\ruleline{\textbf{Soft skills and strengths}}
+			\vspace*{-0.5cm}
+			\begin{center}
+				\cvtag{Flexibility}\cvtag{Autonomy}\cvtag{Patience}\cvtag{Attention to detail}\cvtag{Teamwork}\cvtag{Curiosity}
+			\end{center}
+
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		% QR Code
+		\ruleline{\textbf{Digital resume}}
+		\scriptsize
+		\centering
+		Download my resume using the QR code below.
+		\begin{center}
+			\quad
+			\qrcode[height=2cm]{https://06games.github.io/06Games/cv/resume.pdf} \\
+			\vspace*{0.5cm}
+		\end{center}
+
+	\end{minipage}} %
+\hfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% MAIN SECTION %%%%%%%%%%%%%%%%%%%%
+\adjustbox{valign=t}{\begin{minipage}{11.3cm}
+		\vspace*{1cm}
+		\section*{{\faGraduationCap} EDUCATION}
+
+		\MySection{2023 - \\Today}{Polytech.png}{Computer Science Engineering}{Polytech Nice-Sophia}{Campus SophiaTech, Biot, Alpes-Maritimes}{\null}{\textbf{Top of the promotion in semesters 5 and 6}}
+
+		\vspace*{0.05cm}
+
+		\MySection{2021 - 2023}{Polytech.png}{Integrated preparatory cycle (PeiP)}{Polytech Nice-Sophia}{Site des Lucioles, Biot, Alpes-Maritimes}{\null}{\textbf{Ranked 214th out of 1742 (Polytech network)}}
+
+		\vspace*{0.05cm}
+
+		\MySection{2018 - 2021}{Fenelon.png}{General baccalaureate}{Institut Fénelon}{Lycée Fenelon, Grasse, Alpes-Maritimes}{Mathematics and Physics-Chemistry specialties}{\textbf{First-class honours (16.87 / 20)}}
+
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		% Certificates
+		\section*{{\faCertificate} CERTIFICATES}
+		
+		\MySection{2024}{TOEIC.png}{TOEIC Listening and Reading Test}{ETS TOEIC}{Campus SophiaTech, Biot, Alpes-Maritimes}{C1 Level}{\textbf{Score : 980/990}}
+		
+		\vspace*{0.05cm}
+
+		\MySection{2020}{Cambridge.jpg}{First Certificate in English (FCE)}{Cambridge International Education}{Cambridge School, Valbonne, Alpes-Maritimes}{B2 Level}{\textbf{Score : 172}}
+
+
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		% Work Experience
+		\section*{{\faSuitcase} WORK EXPERIENCE}
+
+		\MySectionNoPic{27/06/2022\\-\\22/07/2022}{Professional immersion}{Mandelieu-la-Napoule, Alpes-Maritimes}{Espace Pro G}{Welcoming customers, preparing orders, receiving deliveries, stocking shelves and stocktaking}
+
+		\vspace*{0.05cm}
+
+		\MySectionNoPic{19/02/2018\\-\\23/02/2018}{Employee representative committee}{Cannes, Alpes-Maritimes}{Thales Alenia Space}{Management of social and cultural activities}
+
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		% Projects
+		\section*{{\faDesktop} PROJECTS}
+
+		\ITCcompetence{may 2024\\-\\june 2024}{
+			\textbf{Compiler}
+			\cvtag{Automatons}\cvtag{Assembly}\cvtag{Sly}\cvtag{\faPython\ Python}
+			\begin{spacing}{1.0}
+			Compiler translating a specially invented language into ARMv7 assembly code.
+			\end{spacing}
+			\faGithub \space \href{https://github.com/Other-Project/SI3-Compiler}{Other-Project/SI3-Compiler}
+		}
+
+		\vspace*{0.05cm}
+
+		\ITCcompetence{feb. 2024\\-\\june 2024}{
+			\textbf{QuizFlash}
+			\cvtag{\faAngular\ Angular}\cvtag{\faNodeJs\ Node.js}\cvtag{\faSass\ SCSS}\cvtag{TypeScript}
+			\begin{spacing}{1.0}
+			Web-based quiz platform designed to be used by people with Alzheimer's disease. Different adaptations are proposed to suit the person's disorders.
+			\end{spacing}
+			\faGithub \space \href{https://github.com/Other-Project/SI3-QuizFlash}{Other-Project/SI3-QuizFlash}
+		}
+
+		\vspace*{0.05cm}
+
+		\ITCcompetence{dec. 2023\\-\\feb. 2024}{
+			\textbf{P-ARM}
+			\cvtag{Assembly}\cvtag{ARMv7-M}\cvtag{C\#}
+			\begin{spacing}{1.0}
+			Simplified reproduction of an ARMv7-M processor on Logisim-Evolution and design of an assembler program.
+			\end{spacing}
+			\faGithub \space \href{https://github.com/Other-Project/SI3-PARM}{Other-Project/SI3-PARM}
+		}
+
+		\vspace*{0.05cm}
+
+		\ITCcompetence{april 2020\\-\\Today}{
+			\textbf{GeneaGrab}
+			\cvtag{C\#}\cvtag{Avalonia}\cvtag{XAML}
+			\begin{spacing}{1.0}
+			Software for my genealogical research, offering an ergonomic, unified interface, regardless of which archive holds the register I want to view.
+			\end{spacing}
+			\faGithub \space \href{https://github.com/06Games/GeneaGrab}{06Games/GeneaGrab}
+		}
+
+		\vspace*{0.05cm}
+
+		\ITCcompetence{dec. 2017\\-\\may 2019}{
+			\textbf{Angry Dash}
+			\cvtag{C\#}\cvtag{\faUnity\ Unity}
+			\begin{spacing}{1.0}
+			A 2D game designed with Unity, in which the player must move around a map strewn with obstacles. A level editor, triggered actions and an interface customization system are available.
+			\end{spacing}
+			\faGithub \space \href{https://github.com/06Games/Angry\_Dash}{06Games/Angry\_Dash}
+		}
+
+	\end{minipage}} %
+
+\iffalse
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Second Page
+	\newpage
+
+	\sidebar{sideBarColor!25}
+	\newpageheader{titleBackColor}{Jack}{Sparrow}{Pirate \faLightbulb[regular] \hspace{1mm} Captain}{white}
+
+	% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SIDEBAR %%%%%%%%%%%%%%%%%%%
+	\adjustbox{valign=t}{%
+		\begin{minipage}{7.3cm}
+			\vspace*{0.4cm} % text starts 0.4cm under the top the header
+
+
+		\end{minipage}
+	}%
+	\hfill
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MAIN %%%%%%%%%%%%%%%%%%%%%%%%%
+	\adjustbox{valign=t}{%
+		\begin{minipage}{11.3cm}
+			\vspace*{0.4cm}
+
+
+		\end{minipage}}
+\fi
+
+\end{document}
