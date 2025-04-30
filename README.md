@@ -30,5 +30,5 @@
 
 <p align="center">
 	<img src="https://gist.githubusercontent.com/06Games/10f4965fcf0f4b50323eea8346f5a32d/raw/github-metrics.svg" alt="Metrics"><br />
-	<img src="https://streak-stats.demolab.com?user=06Games&theme=transparent&hide_border=true&mode=weekly" alt="GitHub Streak">
+	<img src="https://github-readme-streak-stats-eight.vercel.app/?user=06Games&theme=transparent&hide_border=true&mode=weekly" alt="GitHub Streak">
 </p>
