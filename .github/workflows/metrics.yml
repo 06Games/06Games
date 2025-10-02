@@ -10,7 +10,8 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      # lowlighter/metrics@latest is broken
+      - uses: stalomeow/metrics@edcae0f874d69e509d25ddd5e750a2f41cd54e10
         with:
           token: ${{ secrets.METRICS_TOKEN }}
 
