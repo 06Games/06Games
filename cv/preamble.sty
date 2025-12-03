@@ -128,9 +128,10 @@
 \newcommand{\MySection}[7]{ % input: years, logo, title, university, city, specialization, description
     \adjustbox{valign=t}{\begin{minipage}{2cm}
         \begin{center}
-            {\small \bfseries #1} \\
             \vspace*{0.1cm}
-            \includegraphics[width=1.2cm]{#2}
+            \begin{spacing}{0.8} {\footnotesize \bfseries #1} \end{spacing}
+            \vspace*{0.2cm}
+            \includegraphics[height=0.75cm]{#2}
         \end{center}
     \end{minipage}}
     \hfill \vline \hfill
@@ -184,6 +185,7 @@
 \newcommand{\ITCcompetence}[2]{ % input: Branch, description
     \adjustbox{valign=t}{\begin{minipage}{2cm}
     \begin{center}
+        \vspace*{0.1cm}
         {\footnotesize \bfseries #1} \\
         \vspace*{0.1cm}
     \end{center}
